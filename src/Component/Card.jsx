@@ -10,7 +10,7 @@ const Card = () => {
 
     console.log(data.length);
     async function getData() {
-        let response = await fetch("https://gumstack-task-production.up.railway.app/api/v1/cities")
+        let response = await fetch("https://gumstack-task-backend.herokuapp.com/api/v1/cities")
         let { data } = await response.json()
         console.log(data);
         setData(data)

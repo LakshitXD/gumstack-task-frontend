@@ -25,7 +25,7 @@ function AddPlace() {
 
     async function addButton() {
 
-        await fetch("https://gumstack-task-production.up.railway.app/api/v1/cities", {
+        await fetch("https://gumstack-task-backend.herokuapp.com/api/v1/cities", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/vnd.api+json'
